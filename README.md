@@ -20,81 +20,9 @@ The [NVIDIA Container Runtime](https://github.com/NVIDIA/nvidia-docker) for Dock
 
 ## Supported tags
 
-### Python 3.8
-
-#### CUDA 10.2
-
-- [`pure/python:3.8-cuda10.2-base` (*10.2/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.2/base/Dockerfile)
-- [`pure/python:3.8-cuda10.2-runtime` (*10.2/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.2/runtime/Dockerfile)
-- [`pure/python:3.8-cuda10.2-cudnn7-runtime` (*10.2/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.2/runtime/cudnn7/Dockerfile)
-
-#### CUDA 10.1
-
-- [`pure/python:3.8-cuda10.1-base` (*10.1/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.1/base/Dockerfile)
-- [`pure/python:3.8-cuda10.1-runtime` (*10.1/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.1/runtime/Dockerfile)
-- [`pure/python:3.8-cuda10.1-cudnn7-runtime` (*10.1/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.1/runtime/cudnn7/Dockerfile)
-
-#### CUDA 10.0
-
-- [`pure/python:3.8-cuda10.0-base` (*10.0/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.0/base/Dockerfile)
-- [`pure/python:3.8-cuda10.0-runtime` (*10.0/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.0/runtime/Dockerfile)
-- [`pure/python:3.8-cuda10.0-cudnn7-runtime` (*10.0/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.0/runtime/cudnn7/Dockerfile)
-
-#### CUDA 9.0
-
-- [`pure/python:3.8-cuda9.0-base` (*9.0/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/9.0/base/Dockerfile)
-- [`pure/python:3.8-cuda9.0-runtime` (*9.0/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/9.0/runtime/Dockerfile)
-- [`pure/python:3.8-cuda9.0-cudnn7-runtime` (*9.0/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/9.0/runtime/cudnn7/Dockerfile)
-
 ### Python 3.7
 
-#### CUDA 10.2
+#### CUDA 11.0.3
 
-- [`pure/python:3.7-cuda10.2-base` (*10.2/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.2/base/Dockerfile)
-- [`pure/python:3.7-cuda10.2-runtime` (*10.2/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.2/runtime/Dockerfile)
-- [`pure/python:3.7-cuda10.2-cudnn7-runtime` (*10.2/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.2/runtime/cudnn7/Dockerfile)
-
-#### CUDA 10.1
-
-- [`pure/python:3.7-cuda10.1-base` (*10.1/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.1/base/Dockerfile)
-- [`pure/python:3.7-cuda10.1-runtime` (*10.1/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.1/runtime/Dockerfile)
-- [`pure/python:3.7-cuda10.1-cudnn7-runtime` (*10.1/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.1/runtime/cudnn7/Dockerfile)
-
-#### CUDA 10.0
-
-- [`pure/python:3.7-cuda10.0-base` (*10.0/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.0/base/Dockerfile)
-- [`pure/python:3.7-cuda10.0-runtime` (*10.0/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.0/runtime/Dockerfile)
-- [`pure/python:3.7-cuda10.0-cudnn7-runtime` (*10.0/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.0/runtime/cudnn7/Dockerfile)
-
-#### CUDA 9.0
-
-- [`pure/python:3.7-cuda9.0-base` (*9.0/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/9.0/base/Dockerfile)
-- [`pure/python:3.7-cuda9.0-runtime` (*9.0/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/9.0/runtime/Dockerfile)
-- [`pure/python:3.7-cuda9.0-cudnn7-runtime` (*9.0/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/9.0/runtime/cudnn7/Dockerfile)
-
-### Python 3.6
-
-#### CUDA 10.2
-
-- [`pure/python:3.6-cuda10.2-base` (*10.2/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.2/base/Dockerfile)
-- [`pure/python:3.6-cuda10.2-runtime` (*10.2/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.2/runtime/Dockerfile)
-- [`pure/python:3.6-cuda10.2-cudnn7-runtime` (*10.2/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.2/runtime/cudnn7/Dockerfile)
-
-#### CUDA 10.1
-
-- [`pure/python:3.6-cuda10.1-base` (*10.1/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.1/base/Dockerfile)
-- [`pure/python:3.6-cuda10.1-runtime` (*10.1/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.1/runtime/Dockerfile)
-- [`pure/python:3.6-cuda10.1-cudnn7-runtime` (*10.1/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.1/runtime/cudnn7/Dockerfile)
-
-#### CUDA 10.0
-
-- [`pure/python:3.6-cuda10.0-base` (*10.0/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.0/base/Dockerfile)
-- [`pure/python:3.6-cuda10.0-runtime` (*10.0/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.0/runtime/Dockerfile)
-- [`pure/python:3.6-cuda10.0-cudnn7-runtime` (*10.0/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/10.0/runtime/cudnn7/Dockerfile)
-
-#### CUDA 9.0
-
-- [`pure/python:3.6-cuda9.0-base` (*9.0/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/9.0/base/Dockerfile)
-- [`pure/python:3.6-cuda9.0-runtime` (*9.0/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/9.0/runtime/Dockerfile)
-- [`pure/python:3.6-cuda9.0-cudnn7-runtime` (*9.0/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/9.0/runtime/cudnn7/Dockerfile)
+- [`danieldeutsch/python:3.7-cuda11.0.3-base` (*11.0.3/base/Dockerfile*)](https://github.com/danieldeutsch/python-cuda/blob/master/11.0.3/base/Dockerfile)
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE_BASE_NAME="pure/python"
+IMAGE_BASE_NAME="danieldeutsch/python"
 
 set -e
 
@@ -8,9 +8,9 @@ cat readme_header.md >README_.md
 
 echo -e "## Supported tags\n" >>README_.md
 
-for py in "3.8" "3.7" "3.6"; do
+for py in "3.7"; do
     echo -e "### Python $py\n" >>README_.md
-    for cuda in "10.2" "10.1" "10.0" "9.0"; do
+    for cuda in "11.0.3"; do
         echo -e "#### CUDA ${cuda}\n" >>README_.md
         IMAGE_PREFIX="${IMAGE_BASE_NAME}:${py}"
 
@@ -23,33 +23,11 @@ for py in "3.8" "3.7" "3.6"; do
             "${cuda}/base"
         echo
 
-        echo "Building ${IMAGE_PREFIX}-cuda${cuda}-runtime"
-        docker build \
-            --quiet \
-            --build-arg IMAGE_PREFIX="${IMAGE_PREFIX}" \
-            --build-arg CUDA="${cuda}" \
-            --tag "${IMAGE_PREFIX}-cuda${cuda}-runtime" \
-            "${cuda}/runtime"
-        echo
-
-        echo "Building ${IMAGE_PREFIX}-cuda${cuda}-cudnn7-runtime"
-        docker build \
-            --quiet \
-            --build-arg IMAGE_PREFIX="${IMAGE_PREFIX}" \
-            --build-arg CUDA="${cuda}" \
-            --tag "${IMAGE_PREFIX}-cuda${cuda}-cudnn7-runtime" \
-            "${cuda}/runtime/cudnn7"
-        echo
-
         echo "Pushing images to repository"
         docker push "${IMAGE_PREFIX}-cuda${cuda}-base"
-        docker push "${IMAGE_PREFIX}-cuda${cuda}-runtime"
-        docker push "${IMAGE_PREFIX}-cuda${cuda}-cudnn7-runtime"
         echo
 
-echo "- [\`${IMAGE_PREFIX}-cuda${cuda}-base\` (*${cuda}/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/${cuda}/base/Dockerfile)" >>README_.md
-echo "- [\`${IMAGE_PREFIX}-cuda${cuda}-runtime\` (*${cuda}/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/${cuda}/runtime/Dockerfile)" >>README_.md
-echo "- [\`${IMAGE_PREFIX}-cuda${cuda}-cudnn7-runtime\` (*${cuda}/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/${cuda}/runtime/cudnn7/Dockerfile)" >>README_.md
+echo "- [\`${IMAGE_PREFIX}-cuda${cuda}-base\` (*${cuda}/base/Dockerfile*)](https://github.com/danieldeutsch/python-cuda/blob/master/${cuda}/base/Dockerfile)" >>README_.md
 echo "" >>README_.md
 
     done
