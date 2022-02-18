@@ -8,7 +8,7 @@ cat readme_header.md >README_.md
 
 echo -e "## Supported tags\n" >>README_.md
 
-for py in "3.7"; do
+for py in "3.6" "3.7" "3.8" "3.9"; do
     echo -e "### Python $py\n" >>README_.md
     for cuda in "11.0.3"; do
         echo -e "#### CUDA ${cuda}\n" >>README_.md
